@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.12
+# v0.19.11
 
 using Markdown
 using InteractiveUtils
@@ -213,7 +213,7 @@ md"""
 """
 
 # ╔═╡ 7bfffe60-cba0-41af-8487-b700f5c2d77f
-response_1a = missing
+response_1a = "Yes, because we only need to wrtie the file to the disk once, which takes a longer time than it after serval operations. "
 
 # ╔═╡ ec40dba4-7217-4185-99f5-d821bdab036c
 if ismissing(response_1a)   still_missing() end
@@ -274,7 +274,7 @@ Based on the above results, how long do you predict it will take to read that CS
 """
 
 # ╔═╡ 507e1516-5433-49eb-831d-32426f30895e
-response_1b = missing
+response_1b = "Since the total number of rows is ~10^5, the corresponding time is around 0.1s, which is around 10^(-1)."
 
 # ╔═╡ eac67cc9-754b-4f7d-add8-93900a1b5b49
 if ismissing(response_1b) still_missing() end
@@ -304,7 +304,7 @@ md"""
 """
 
 # ╔═╡ 57397ee4-9efc-48b3-b640-d2b7a10da633
-response_1c = missing
+response_1c = "The actual time of reading csv file is 0.252s, which is a bit longer than what I expected, but they are in the same magnitude."
 
 # ╔═╡ 8059a6a3-384a-4344-8a23-650ee0be10c2
 if ismissing(response_1c)  still_missing()   end
@@ -318,7 +318,7 @@ Now, we'll try writing the same data out to a new CSV file.
 md"**Q1d:** How long do you predict it will take to write the same data to a new CSV file?  Once you've made your prediction, mouse over the hint box.  If you were surprised, try to explain what caused the difference from your prediction."
 
 # ╔═╡ 122196fa-45ca-4031-85eb-4afd4782de9e
-response_1d = missing
+response_1d = "The time will be longer to write, I think it is around 0.25s, which is around 10^(-0.6)."
 
 # ╔═╡ e9dc1456-616b-4e4b-b209-9f6ba4c48607
 if ismissing(response_1d)  still_missing()   end
@@ -366,7 +366,7 @@ In general, a floating point value stored as a `Float64` (commonly referred to a
 """
 
 # ╔═╡ 9b411269-f1bc-4e1b-93c8-78f5407597cb
-response_2a = missing
+response_2a = "The filesize of JLD2 may be smaller than CSV files."
 
 # ╔═╡ 7cda896c-59e4-4c08-8237-7869589604ba
 if ismissing(response_2a)  still_missing()   end
@@ -377,7 +377,7 @@ md"""
 """
 
 # ╔═╡ 28af4229-5de4-47ef-9fc8-4033901c50b8
-response_2b = missing
+response_2b = "The time of reading JLD2 file will be longer then it of the CSV file."
 
 # ╔═╡ 8bfde242-e2ec-4556-8b54-bbafbe1b1ddc
 if ismissing(response_2b)  still_missing()   end
@@ -413,7 +413,7 @@ Try to explain any significant differences.
 """
 
 # ╔═╡ ca62f6ad-1dd5-4ca5-a957-d82e38198b11
-response_2c = missing
+response_2c = "My prediction matches te to the actual results. The writer time and reading time of CSV are much smaller than it of HDF5/JLD2. "
 
 # ╔═╡ 5a2b064c-21f3-4ce6-a3e5-ab0a9f98dd5c
 if ismissing(response_2c)  still_missing()   end
@@ -441,7 +441,7 @@ md"""
 """
 
 # ╔═╡ 55eaadf5-d352-4673-a56c-effb952093dc
-response_2d = missing
+response_2d = "the filesize of the JLD2 file with the large dataset will be larger than it of the CSV file. "
 
 # ╔═╡ 107a432d-39e8-4db2-9820-a57a88589d6e
 if ismissing(response_2d)  still_missing()   end
@@ -452,7 +452,7 @@ md"""
 """
 
 # ╔═╡ 8856674a-6b72-4dfa-9753-0dcd9e578068
-response_2e = missing
+response_2e = "The time of reading JlD2 file will be longer than it of CSV, and the time JLD2 takes may be in the magnitude of 10^(-2)."
 
 # ╔═╡ 4c17241a-1f1a-4a49-8a13-2deb0e266ce6
 if ismissing(response_2e)  still_missing()   end
@@ -494,7 +494,7 @@ md"""
 """
 
 # ╔═╡ b800d43d-e688-4059-8aa2-0fddb45e2940
-response_2f = missing
+response_2f = "CSV file is a text format, but the JLD2 file is a binary file format, which takes larger bytes."
 
 # ╔═╡ 0eb83f4b-64cc-4864-8a80-9305da59e82f
 if ismissing(response_2f)  still_missing()   end
@@ -505,7 +505,7 @@ md"""
 """
 
 # ╔═╡ ec00c9a5-2140-4b34-bab4-9a89e09eecdc
-response_2g = missing
+response_2g = "We can exclude the colume with no value to save space."
 
 # ╔═╡ bf2f48b7-fde9-41df-83e8-26ee557b6f1c
 if ismissing(response_2g)  still_missing()   end
@@ -514,7 +514,7 @@ if ismissing(response_2g)  still_missing()   end
 md"**Q2h.**  How long do you think it will take to load the data from the JLD2 file? "
 
 # ╔═╡ c3065acf-6205-455f-ba74-ca51f3f6761b
-response_2h = missing
+response_2h = "it will be much longer than load from CSV file, and may have the magnitude of 0.1."
 
 # ╔═╡ fc01d57f-c90b-4231-96be-ddd48656d55e
 md"""
@@ -534,7 +534,7 @@ md"""
 """
 
 # ╔═╡ c7373630-aab0-45a3-b9b9-5ccbe8785ff1
-response_3a = missing
+response_3a = "The filesize of small FITS file may be smaller than it of CSV and HDF5/JLD2, and it may takes ~20000 bytes."
 
 # ╔═╡ 98bac9c4-28e4-46aa-ab82-4c5017bbdfa4
 if ismissing(response_3a)  still_missing()   end
@@ -545,7 +545,7 @@ md"""
 """
 
 # ╔═╡ cdacd651-19af-41d5-a5c0-75ffab32300c
-response_3b = missing
+response_3b = "around 0.001 second"
 
 # ╔═╡ 7c4c83de-48b4-474d-9995-ea86ed06af6d
 if ismissing(response_3b)  still_missing()   end
@@ -556,7 +556,7 @@ md"""
 """
 
 # ╔═╡ a63af23d-5408-4815-b898-1ab62670d37a
-response_3c = missing
+response_3c = "The result is similar to my expectation. "
 
 # ╔═╡ 4960aac7-29e3-415b-bbd0-2ecdca26fd46
 if ismissing(response_3c)  still_missing()   end
@@ -574,7 +574,7 @@ md"""
 """
 
 # ╔═╡ d5e4f29d-ee33-4fac-afd8-2d6e69f611ac
-response_3d = missing
+response_3d = "The filesize of large FITS file may be largerer than it of CSV and HDF5/JLD2, and it may takes ~50000000 bytes. It may takes around 1 second for operation."
 
 # ╔═╡ 3314b839-293c-4731-95b5-61b9b25613db
 if ismissing(response_3d)  still_missing()   end
@@ -588,7 +588,7 @@ md"""
 """
 
 # ╔═╡ d69bc955-6119-4327-bfd4-ca4723bbaac1
-response_3e = missing
+response_3e = "The The filesize of large FITS file is largerer than it of CSV file but s,aller than it of HDF5/JLD2 file. It has ~30000000 bytes and takes around 0.5 seconds for operation, which is longer than it of CSV but shorter than it of HDF5/JLD2 file ."
 
 # ╔═╡ e00bdaa1-fa0a-404d-9da2-595c416a2097
 if ismissing(response_3e)  still_missing()   end
@@ -607,7 +607,7 @@ md"""
 """
 
 # ╔═╡ 55438c09-1d94-4ff7-90c3-0cc6064a091e
-response_4a = missing
+response_4a = "The time of reading data in the notebook is shorter than it is from the internet. "
 
 # ╔═╡ 1004feae-cf1a-4ecf-b443-34f5da22f4ec
 if ismissing(response_4a)  still_missing()   end
@@ -624,7 +624,7 @@ Would it make sense for you to preprocess your data and write it into a differen
 """
 
 # ╔═╡ bcc796c9-db11-4a09-a5f9-215127ac0938
-response_4b = missing
+response_4b = "Yes, it is around 7MB, and we may takes time in magnitude of 0.01 to read. The raw data is in the format of CSV, and I think it is fine because our previous labs use CSV format for operation. "
 
 # ╔═╡ 7790b2e0-36a3-44c5-aa69-83a146ca7799
 if ismissing(response_4b)   still_missing()   end
@@ -903,9 +903,9 @@ uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
 version = "4.1.1"
 
 [[deps.DataAPI]]
-git-tree-sha1 = "46d2680e618f8abd007bce0c3026cb0c4a8f2032"
+git-tree-sha1 = "1106fa7e1256b402a86a8e7b15c00c85036fef49"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
-version = "1.12.0"
+version = "1.11.0"
 
 [[deps.DataFrames]]
 deps = ["Compat", "DataAPI", "Future", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrettyTables", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
@@ -960,9 +960,9 @@ version = "0.4.1"
 
 [[deps.FFMPEG_jll]]
 deps = ["Artifacts", "Bzip2_jll", "FreeType2_jll", "FriBidi_jll", "JLLWrappers", "LAME_jll", "Libdl", "Ogg_jll", "OpenSSL_jll", "Opus_jll", "PCRE2_jll", "Pkg", "Zlib_jll", "libaom_jll", "libass_jll", "libfdk_aac_jll", "libvorbis_jll", "x264_jll", "x265_jll"]
-git-tree-sha1 = "74faea50c1d007c85837327f6775bea60b5492dd"
+git-tree-sha1 = "40c63abc94311b4e2bff4cd9a6a59bda1873c95b"
 uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"
-version = "4.4.2+2"
+version = "4.4.2+1"
 
 [[deps.FITSIO]]
 deps = ["CFITSIO", "Printf", "Reexport", "Tables"]
@@ -1027,9 +1027,9 @@ version = "3.3.8+0"
 
 [[deps.GR]]
 deps = ["Base64", "DelimitedFiles", "GR_jll", "HTTP", "JSON", "Libdl", "LinearAlgebra", "Pkg", "Preferences", "Printf", "Random", "Serialization", "Sockets", "Test", "UUIDs"]
-git-tree-sha1 = "a9ec6a35bc5ddc3aeb8938f800dc599e652d0029"
+git-tree-sha1 = "2c5ab2c1e683d991300b125b9b365cb0a0035d88"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
-version = "0.69.3"
+version = "0.69.1"
 
 [[deps.GR_jll]]
 deps = ["Artifacts", "Bzip2_jll", "Cairo_jll", "FFMPEG_jll", "Fontconfig_jll", "GLFW_jll", "JLLWrappers", "JpegTurbo_jll", "Libdl", "Libtiff_jll", "Pixman_jll", "Pkg", "Qt5Base_jll", "Zlib_jll", "libpng_jll"]
@@ -1045,9 +1045,9 @@ version = "0.21.0+0"
 
 [[deps.Glib_jll]]
 deps = ["Artifacts", "Gettext_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE2_jll", "Pkg", "Zlib_jll"]
-git-tree-sha1 = "fb83fbe02fe57f2c068013aa94bcdf6760d3a7a7"
+git-tree-sha1 = "61c566fbd29b42c9a58e7998ff69b2268a205364"
 uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
-version = "2.74.0+1"
+version = "2.74.0+0"
 
 [[deps.Graphite2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1107,9 +1107,9 @@ uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.InverseFunctions]]
 deps = ["Test"]
-git-tree-sha1 = "49510dfcb407e572524ba94aeae2fced1f3feb0f"
+git-tree-sha1 = "b3364212fb5d870f724876ffcd34dd8ec6d98918"
 uuid = "3587e190-3f89-42d0-90ee-14403ec27112"
-version = "0.1.8"
+version = "0.1.7"
 
 [[deps.InvertedIndices]]
 git-tree-sha1 = "bee5f1ef5bf65df56bdd2e40447590b272a5471f"
@@ -1128,9 +1128,9 @@ version = "1.0.0"
 
 [[deps.JLD2]]
 deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "Printf", "Reexport", "TranscodingStreams", "UUIDs"]
-git-tree-sha1 = "0d0ad913e827d13c5e88a73f9333d7e33c424576"
+git-tree-sha1 = "6c38bbe47948f74d63434abed68bdfc8d2c46b99"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.24"
+version = "0.4.23"
 
 [[deps.JLFzf]]
 deps = ["Pipe", "REPL", "Random", "fzf_jll"]
@@ -1411,9 +1411,9 @@ version = "1.3.1"
 
 [[deps.Plots]]
 deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers", "GR", "JLFzf", "JSON", "LaTeXStrings", "Latexify", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "Printf", "REPL", "Random", "RecipesBase", "RecipesPipeline", "Reexport", "RelocatableFolders", "Requires", "Scratch", "Showoff", "SnoopPrecompile", "SparseArrays", "Statistics", "StatsBase", "UUIDs", "UnicodeFun", "Unzip"]
-git-tree-sha1 = "f60a3090028cdf16b33a62f97eaedf67a6509824"
+git-tree-sha1 = "fae3b66e343703f8f89b854a4da40bce0f84da22"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-version = "1.35.0"
+version = "1.34.3"
 
 [[deps.PlutoHooks]]
 deps = ["InteractiveUtils", "Markdown", "UUIDs"]
@@ -1483,9 +1483,9 @@ version = "1.3.0"
 
 [[deps.RecipesPipeline]]
 deps = ["Dates", "NaNMath", "PlotUtils", "RecipesBase"]
-git-tree-sha1 = "017f217e647cf20b0081b9be938b78c3443356a0"
+git-tree-sha1 = "e7eac76a958f8664f2718508435d058168c7953d"
 uuid = "01d81517-befc-4cb6-b9ec-a95719d0359c"
-version = "0.6.6"
+version = "0.6.3"
 
 [[deps.Reexport]]
 git-tree-sha1 = "45e428421666073eab6f2da5c9d310d99bb12f9b"
@@ -1926,10 +1926,10 @@ version = "1.4.1+0"
 # ╟─28f195c4-4f61-4873-85d6-b4e3aaa3660f
 # ╠═3837e439-250b-4577-b0d7-93352ec19f6e
 # ╟─6c147ad6-95b4-4008-bd9b-72f1ece8de5c
-# ╟─9b411269-f1bc-4e1b-93c8-78f5407597cb
+# ╠═9b411269-f1bc-4e1b-93c8-78f5407597cb
 # ╟─7cda896c-59e4-4c08-8237-7869589604ba
 # ╟─afd68362-8459-4994-bdc7-1338640a4543
-# ╟─28af4229-5de4-47ef-9fc8-4033901c50b8
+# ╠═28af4229-5de4-47ef-9fc8-4033901c50b8
 # ╟─8bfde242-e2ec-4556-8b54-bbafbe1b1ddc
 # ╟─ced8a0e5-b6e7-4a72-a296-d0ae3865a6ee
 # ╟─86728419-ebb4-4d90-88bb-346c763e0fb9
@@ -1937,7 +1937,7 @@ version = "1.4.1+0"
 # ╠═ca62f6ad-1dd5-4ca5-a957-d82e38198b11
 # ╠═5a2b064c-21f3-4ce6-a3e5-ab0a9f98dd5c
 # ╟─570fd826-23fd-46ee-bdb4-58fb0c45719a
-# ╟─691410bb-0472-4800-a90d-29ddf947de3e
+# ╠═691410bb-0472-4800-a90d-29ddf947de3e
 # ╟─6143bcd4-32b7-48c3-8b88-4b615d20f1b3
 # ╠═55eaadf5-d352-4673-a56c-effb952093dc
 # ╟─107a432d-39e8-4db2-9820-a57a88589d6e
@@ -1952,7 +1952,7 @@ version = "1.4.1+0"
 # ╠═b800d43d-e688-4059-8aa2-0fddb45e2940
 # ╟─0eb83f4b-64cc-4864-8a80-9305da59e82f
 # ╟─7a17bf14-b749-4136-bfde-e5599a8738be
-# ╟─ec00c9a5-2140-4b34-bab4-9a89e09eecdc
+# ╠═ec00c9a5-2140-4b34-bab4-9a89e09eecdc
 # ╟─bf2f48b7-fde9-41df-83e8-26ee557b6f1c
 # ╟─8cbb1c90-bd94-44b5-80b6-81d38f3e6252
 # ╠═c3065acf-6205-455f-ba74-ca51f3f6761b
@@ -1984,7 +1984,7 @@ version = "1.4.1+0"
 # ╠═55438c09-1d94-4ff7-90c3-0cc6064a091e
 # ╟─1004feae-cf1a-4ecf-b443-34f5da22f4ec
 # ╟─2ffd6e61-2fd2-4f91-9ebb-9b67183803b6
-# ╟─bcc796c9-db11-4a09-a5f9-215127ac0938
+# ╠═bcc796c9-db11-4a09-a5f9-215127ac0938
 # ╟─7790b2e0-36a3-44c5-aa69-83a146ca7799
 # ╟─29415ddc-e002-4f56-a169-95f7b1c36be9
 # ╟─fb23d6c6-b812-4fe1-b224-0014bedbd43f
